@@ -108,7 +108,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ─── HAMBURGER MENU ───────────────────────────────────────────
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
  
@@ -118,7 +117,6 @@ hamburger.addEventListener('click', () => {
   document.body.classList.toggle('no-scroll');
 });
  
-// Close menu when any nav link is clicked
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('active');
@@ -127,7 +125,6 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
  
-// Close menu when clicking outside of it
 document.addEventListener('click', (e) => {
   if (
     navLinks.classList.contains('active') &&
